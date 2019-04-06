@@ -75,3 +75,4 @@ gem 'will_paginate-bootstrap'
 
 gem 'simple_form'
 
+gem 'font-awesome-rails'
