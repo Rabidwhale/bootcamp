@@ -72,3 +72,6 @@ end
 
 gem 'will_paginate', '> 3.1.1'
 gem 'will_paginate-bootstrap'
+
+gem 'simple_form'
+
