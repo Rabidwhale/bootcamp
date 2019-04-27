@@ -21,6 +21,10 @@ before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destro
   def show
     @place = Place.find(params[:id])
     @comment = Comment.new
+    @photo = Photo.new
+    @place.photos.each do |photo|
+      Rails.logger.warn (photo.picture.url rescue photo.picture)
+    end
   end
 
   def edit
