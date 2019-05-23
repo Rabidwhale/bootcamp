@@ -1,6 +1,6 @@
 Rails.application.configure do
 
-  ActionMailer::Base.smtp_setting = {
+  ActionMailer::Base.smtp_settings = {
     address: 'smtp.sendgrid.net',
     port: '587',
     authentication: :plain,
@@ -103,5 +103,4 @@ Rails.application.configure do
   end
 
   # Do not dump schema after migrations.
-  config.active_record.dump_schema_after_migration = false
 end
